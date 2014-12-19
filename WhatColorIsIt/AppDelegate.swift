@@ -15,6 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+        // Disabled Screen Idle
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
         // Override point for customization after application launch.
         return true
     }

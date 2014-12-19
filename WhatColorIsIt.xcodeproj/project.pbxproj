@@ -13,6 +13,8 @@
 		27AFD7BF1A44E3D000F46701 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27AFD7BE1A44E3D000F46701 /* Images.xcassets */; };
 		27AFD7C21A44E3D000F46701 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27AFD7C01A44E3D000F46701 /* LaunchScreen.xib */; };
 		27AFD7CE1A44E3D000F46701 /* WhatColorIsItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFD7CD1A44E3D000F46701 /* WhatColorIsItTests.swift */; };
+		27AFD7D81A44E6AB00F46701 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AFD7D71A44E6AB00F46701 /* UIColorExtension.swift */; };
+		27D9E9F51A44E860002C9462 /* OpenSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27D9E9F41A44E80A002C9462 /* OpenSans-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		27AFD7C71A44E3D000F46701 /* WhatColorIsItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhatColorIsItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27AFD7CC1A44E3D000F46701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27AFD7CD1A44E3D000F46701 /* WhatColorIsItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatColorIsItTests.swift; sourceTree = "<group>"; };
+		27AFD7D71A44E6AB00F46701 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		27D9E9F41A44E80A002C9462 /* OpenSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		27AFD7B41A44E3D000F46701 /* WhatColorIsIt */ = {
 			isa = PBXGroup;
 			children = (
+				27AFD7D71A44E6AB00F46701 /* UIColorExtension.swift */,
 				27AFD7B71A44E3D000F46701 /* AppDelegate.swift */,
 				27AFD7B91A44E3D000F46701 /* ViewController.swift */,
 				27AFD7BB1A44E3D000F46701 /* Main.storyboard */,
@@ -90,6 +95,7 @@
 		27AFD7B51A44E3D000F46701 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				27D9E9F41A44E80A002C9462 /* OpenSans-Light.ttf */,
 				27AFD7B61A44E3D000F46701 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27D9E9F51A44E860002C9462 /* OpenSans-Light.ttf in Resources */,
 				27AFD7BD1A44E3D000F46701 /* Main.storyboard in Resources */,
 				27AFD7C21A44E3D000F46701 /* LaunchScreen.xib in Resources */,
 				27AFD7BF1A44E3D000F46701 /* Images.xcassets in Resources */,
@@ -214,6 +221,7 @@
 			files = (
 				27AFD7BA1A44E3D000F46701 /* ViewController.swift in Sources */,
 				27AFD7B81A44E3D000F46701 /* AppDelegate.swift in Sources */,
+				27AFD7D81A44E6AB00F46701 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +349,7 @@
 				INFOPLIST_FILE = WhatColorIsIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +360,7 @@
 				INFOPLIST_FILE = WhatColorIsIt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -407,6 +417,7 @@
 				27AFD7D31A44E3D000F46701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27AFD7D41A44E3D000F46701 /* Build configuration list for PBXNativeTarget "WhatColorIsItTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +426,7 @@
 				27AFD7D61A44E3D000F46701 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
