@@ -35,6 +35,10 @@ class ViewController: UIViewController, UIGestureRecognizerDelegate {
         NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "runClock", userInfo: nil, repeats: true)
     }
     
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
     func runClock() {
         // Get Date Components
         let date = NSDate()
