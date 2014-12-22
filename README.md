@@ -1,7 +1,7 @@
 WhatColorIsIt
 =============
 
-Adaptation of http://whatcolourisit.scn9a.org/ for iOS (and maybe eventually Android).
+Adaptation of http://whatcolourisit.scn9a.org/ for iOS (and Android coming soon).
 
 ## iOS Screenshots
 ![iOS Screenshot One](screenshots/ios/one.png)
