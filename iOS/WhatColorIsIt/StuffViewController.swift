@@ -99,6 +99,8 @@ class StuffViewController: UITableViewController {
         if indexPath == tableView.indexPathForCell(websiteCell) {
             UIApplication.sharedApplication().openURL(NSURL(string: "https://www.kylefrostdesign.com")!)
         }
+
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
     }
 }
 
@@ -159,6 +161,5 @@ class ClipboardViewController: UITableViewController {
         }
         
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        //navigationController?.popViewControllerAnimated(true)
     }
 }
