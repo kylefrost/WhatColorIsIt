@@ -1,7 +1,10 @@
 WhatColorIsIt
 =============
 
-Adaptation of http://whatcolourisit.scn9a.org/ for iOS (and Android coming soon).
+Adaptation of http://whatcolourisit.scn9a.org/ for iOS and Android.
+
+#### Note regarding iOS vs. Android
+*I wanted to submit this to the App Store (as a free app) because I have an account, but Apple won't allow just a clock app into the App Store, hence the "copy to clipboard" functionality. I don't currently have plans to build this into the Android version unless it's requested enough. Or, you know, fork and pull request it!*
 
 ## iOS Screenshots
 #### iPhone 6 Plus
