@@ -25,3 +25,5 @@ Adaptation of http://whatcolourisit.scn9a.org/ for iOS and Android.
 ## Android Screenshots
 #### Nexus 5
 ![Nexus 5 Screenshot](screenshots/android/nexus5.jpg)
+
+*More Android shots coming soon...*
