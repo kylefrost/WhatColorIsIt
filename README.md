@@ -1,7 +1,7 @@
 WhatColorIsIt
 =============
 
-Adaptation of http://whatcolourisit.scn9a.org/ for iOS (and Android coming soon).
+Adaptation of http://whatcolourisit.scn9a.org/ for iOS and Android.
 
 ## iOS Screenshots
 #### iPhone 6 Plus
