@@ -1,24 +1,18 @@
 package com.kylefrost.whatcolorisit;
 
+import android.graphics.Typeface;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
-import android.view.Window;
 import android.os.Handler;
 import android.widget.TextView;
-import java.text.SimpleDateFormat;
 import android.view.View;
-import java.util.Date;
 import java.util.Calendar;
 import android.graphics.Color;
-import android.view.Menu;
-import android.view.MenuItem;
 
 public class MainActivity extends ActionBarActivity {
 
-    // Define Date Format
-    private SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-
     private TextView mClock;
+    private TextView mHex;
 
     private boolean mActive;
 
@@ -33,9 +27,17 @@ public class MainActivity extends ActionBarActivity {
         int uiOptions = View.SYSTEM_UI_FLAG_FULLSCREEN;
         decorView.setSystemUiVisibility(uiOptions);
 
+        Typeface font = Typeface.createFromAsset(getAssets(), "OpenSans-Light.ttf");
+
         mClock = (TextView) findViewById(R.id.clock_label);
-        mClock.setTextSize(60.0f); // set size
-        mClock.setTextColor(Color.WHITE); // set font color
+        mClock.setTextSize(60.0f);
+        mClock.setTextColor(Color.WHITE);
+        mClock.setTypeface(font);
+
+        mHex = (TextView) findViewById(R.id.hex_view);
+        mHex.setTextSize(20.0f);
+        mHex.setTextColor(Color.WHITE);
+        mHex.setTypeface(font);
 
         // Start clock
         startClock();
@@ -49,6 +51,8 @@ public class MainActivity extends ActionBarActivity {
             if (mActive) {
                 if (mClock != null) {
                     mClock.setText(getTime());
+                    mHex.setText(getHex());
+                    getWindow().getDecorView().setBackgroundColor(Color.parseColor(getHex()));
                 }
                 //set time after the specified amount of time elapses
                 mHandler.postDelayed(mRunnable, 1000);
@@ -63,10 +67,25 @@ public class MainActivity extends ActionBarActivity {
         // return sdf.format(new Date(System.currentTimeMillis()));
         Calendar c = Calendar.getInstance();
         int seconds = c.get(Calendar.SECOND);
-        int min= c.get(Calendar.MINUTE);
-        int hour= c.get(Calendar.HOUR_OF_DAY);
+        int min = c.get(Calendar.MINUTE);
+        int hour = c.get(Calendar.HOUR_OF_DAY);
 
+        String numHours;
+        String numMinutes;
         String numSeconds;
+
+        if (min < 10) {
+            numHours = String.format("0%d", hour);
+        } else {
+            numHours = String.format("%d", hour);
+        }
+
+        if (min < 10) {
+            numMinutes = String.format("0%d", min);
+        } else {
+            numMinutes = String.format("%d", min);
+        }
+
         if (seconds < 10) {
             numSeconds = String.format("0%d", seconds);
         } else {
@@ -74,7 +93,39 @@ public class MainActivity extends ActionBarActivity {
         }
 
 
-        return String.format("%d : %d : %s", hour, min, numSeconds);
+        return String.format("%s : %s : %s", numHours, numMinutes, numSeconds);
+    }
+
+    private String getHex() {
+        Calendar c = Calendar.getInstance();
+        int seconds = c.get(Calendar.SECOND);
+        int min = c.get(Calendar.MINUTE);
+        int hour = c.get(Calendar.HOUR_OF_DAY);
+
+        String numHours;
+        String numMinutes;
+        String numSeconds;
+
+        if (min < 10) {
+            numHours = String.format("0%d", hour);
+        } else {
+            numHours = String.format("%d", hour);
+        }
+
+        if (min < 10) {
+            numMinutes = String.format("0%d", min);
+        } else {
+            numMinutes = String.format("%d", min);
+        }
+
+        if (seconds < 10) {
+            numSeconds = String.format("0%d", seconds);
+        } else {
+            numSeconds = String.format("%d", seconds);
+        }
+
+
+        return String.format("#%s%s%s", numHours, numMinutes, numSeconds);
     }
 
     /*
