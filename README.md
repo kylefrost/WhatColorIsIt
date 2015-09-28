@@ -5,7 +5,7 @@ WhatColorIsIt
 
 Adaptation of http://whatcolourisit.scn9a.org/ for iOS and Android.
 
-__iOS app is available in App Store.<br>
+__iOS app is available in App Store.__<br>
 
 ## iOS Screenshots
 #### iPhone 6 Plus
