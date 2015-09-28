@@ -1,19 +1,12 @@
+# This project is no longer supported.
+
 WhatColorIsIt
 =============
 
 Adaptation of http://whatcolourisit.scn9a.org/ for iOS and Android.
 
-__iOS app is submitted to App Store pending approval.<br>
-Android app can be downloaded here: [Color.apk](http://www.kylefrost.me/docs/color.apk).__
+__iOS app is available in App Store.<br>
 
-*Apple Watch and Android Wear versions in planning...and maybe Glass if I get that bored...(after Christmas, though)*
-* * *
-###### *Note regarding iOS vs. Android*
-*I wanted to submit this to the App Store (as a free app) because I have an account, but Apple won't allow just a clock app into the App Store, hence the "copy to clipboard" functionality. I don't currently have plans to build this into the Android version unless it's requested enough. Or, you know, fork and pull request it!*
-* * *
-###### *Note 2 re: iOS vs. Android*
-*After researching Android clipboard and tap gesture handling I may add something similar to Android just because it looks easy...*
-* * * 
 ## iOS Screenshots
 #### iPhone 6 Plus
 ![iOS Screenshot One](screenshots/ios/iphone6plusone.png)
@@ -33,5 +26,3 @@ Android app can be downloaded here: [Color.apk](http://www.kylefrost.me/docs/col
 ## Android Screenshots
 #### Nexus 5
 ![Nexus 5 Screenshot](screenshots/android/nexus5.jpg)
-
-*More Android shots coming soon...*
